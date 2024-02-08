@@ -50,6 +50,14 @@
     myFunc();
     ```
 
+    #### Advantages of closure
+
+    - Module Design Pattern
+    - Currying
+    - Memoize
+    - Data hiding and encapsulation
+    - setTimeouts etc.
+
 **[⬆ Back to Top ](#table-of-contents)**
 
 2. ### What is a callback Function?
