@@ -30,12 +30,12 @@
 | 26  | [Explain the concept of event delegation in JavaScript.](#Explain-the-concept-of-event-delegation-in-JavaScript.)                                                                                                                                                                         |
 | 27  | [Discuss the purpose of the Document Object Model (DOM) in web development.](<#discuss-the-purpose-of-the-Document-Object-Model-(DOM)-in-web-development.>)                                                                                                                               |
 
-1. ### What is the closure?
+1.  ### What is the closure?
 
     A Closure is the combination of functions bundled together with references to its surrounding state ( lexical environment ).
     In other words, a closure gives you access to an outer function's scope from an inner function.
 
-    - functions in JavaScript form closures.
+    -   functions in JavaScript form closures.
 
     ```javascript
     function firstFunc() {
@@ -52,11 +52,17 @@
 
     #### Advantages of closure
 
-    - Module Design Pattern
-    - Currying
-    - Memoize
-    - Data hiding and encapsulation
-    - setTimeouts etc.
+    -   Module Design Pattern
+    -   Currying
+    -   Memoize
+    -   Data hiding and encapsulation
+    -   setTimeouts etc.
+
+    #### DisAdvantages of closure
+
+    Overconsumption of memory when using closure as everytime as those closed over variables are not garbage collected till program expires. So when creating many closures, more memory is accumulated and this can create memory leaks if not handled.
+
+    <b>Garbage collector</b> : Program in JS engine or browser that frees up unused memory. In highlevel languages like C++ or JAVA, garbage collection is left to the programmer, but in JS engine its done implicitly.
 
 **[⬆ Back to Top ](#table-of-contents)**
 
